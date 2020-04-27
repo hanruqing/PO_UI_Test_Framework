@@ -1,0 +1,60 @@
+'manageContacts_href': {
+    'element_name': '联系人链接',
+    'locator_type': 'xpath',
+    'locator_value': '//li[@data-id="manageContacts"]',
+    'timeout': 5.0
+}
+'newList_inputbox': {
+    'element_name': '列表名称输入框',
+    'locator_type': 'xpath',
+    'locator_value': '//input[@id="newList"]',
+    'timeout': 5.0
+}
+'users_chosen_combobox': {
+    'element_name': '用户选择下拉框',
+    'locator_type': 'xpath',
+    'locator_value': '//div[@id="users_chosen"]',
+    'timeout': 5.0
+}
+'choose_users_box': {
+    'element_name': '选择用户',
+    'locator_type': 'xpath',
+    'locator_value': '//li[@title="陈江林"]',
+    'timeout': 5.0
+}
+'save_button': {
+    'element_name': '保存列表按钮',
+    'locator_type': 'xpath',
+    'locator_value': '//button[@id="submit"]',
+    'timeout': 5.0
+}
+'changepasswd_href': {
+    'element_name': '修改密码链接',
+    'locator_type': 'xpath',
+    'locator_value': '//li[@data-id="changePassword"]',
+    'timeout': 5.0
+}
+'originalpasswd_inputbox': {
+    'element_name': '原始密码输入框',
+    'locator_type': 'xpath',
+    'locator_value': '//input[@id="originalPassword"]',
+    'timeout': 5.0
+}
+'newpasswd_inputbox1': {
+    'element_name': '新密码输入框1',
+    'locator_type': 'xpath',
+    'locator_value': '//input[@id="password1"]',
+    'timeout': 5.0
+}
+'newpasswd_inputbox2': {
+    'element_name': '新密码输入框2',
+    'locator_type': 'xpath',
+    'locator_value': '//input[@id="password2"]',
+    'timeout': 5.0
+}
+'savepasswd_button': {
+    'element_name': '密码保存按钮',
+    'locator_type': 'xpath',
+    'locator_value': '//button[@id="submit"]',
+    'timeout': 5.0
+}
