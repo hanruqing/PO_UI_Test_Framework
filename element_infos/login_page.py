@@ -5,6 +5,7 @@ from common.log_utils import logger
 from common.base_page import BasePage
 # from common.element_dta_utils import ElementdataUtils
 from common.element_data_utils_yaml import ElementdataUtilsYaml
+from common.browsers import Browser
 
 
 class LoginPage(BasePage):
@@ -49,11 +50,13 @@ class LoginPage(BasePage):
 
 
 if __name__=="__main__":
-    current_path = os.path.dirname(__file__)
-    driver_path = os.path.join(current_path, '../webdriver/geckodriver')
-    driver=webdriver.Firefox(executable_path=driver_path)
+    driver=Browser().get_driver()
+    #浏览器封装，替代以下语句
+    # current_path = os.path.dirname(__file__)
+    # driver_path = os.path.join(current_path, '../webdriver/geckodriver')
+    # driver=webdriver.Firefox(executable_path=driver_path)
     login_page=LoginPage(driver)
-    login_page.open_url('http://106.53.50.202:8999/zentao2/www/my-managecontacts.html')
+    login_page.open_url('http://106.53.50.202:8999/zentao2/www/user-login-L3plbnRhbzIvd3d3L215Lmh0bWw=.html')
     login_page.input_username('hanruqing')
     login_page.input_password('Aa234567')
     login_page.click_login()
